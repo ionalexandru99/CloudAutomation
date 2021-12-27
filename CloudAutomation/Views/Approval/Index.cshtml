@@ -1,0 +1,13 @@
+﻿@model CloudAutomation.Models.WorkItemToken
+
+@{
+    ViewBag.Title = "This is a test title";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>
+    The data that came is @Model.ResourceId
+    <br/>
+    The status is @Model.Status.ToString()
+</p>

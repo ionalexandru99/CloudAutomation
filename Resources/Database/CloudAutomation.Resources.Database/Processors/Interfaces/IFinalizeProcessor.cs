@@ -1,0 +1,10 @@
+﻿using System.Threading.Tasks;
+using CloudAutomation.Models.DevOps;
+
+namespace CloudAutomation.Resources.Database.Processors.Interfaces
+{
+    public interface IFinalizeProcessor
+    {
+        Task Execute(Resource resource);
+    }
+}

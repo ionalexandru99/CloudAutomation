@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\CreatedResource.html" />
+      <None Remove="Resources\RowDetails.html" />
+      <None Remove="Resources\EmailTemplate.html" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.1.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
+      <PackageReference Include="Microsoft.Azure.ServiceBus" Version="5.1.1" />
+      <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.9" />
+      <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CloudAutomation.DataAccess\CloudAutomation.DataAccess.csproj" />
+      <ProjectReference Include="..\CloudAutomation.Models\CloudAutomation.Models.csproj" />
+      <ProjectReference Include="..\CloudAutomation.Utils\CloudAutomation.Utils.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Resources\CreatedResource.html" />
+      <EmbeddedResource Include="Resources\EmailTemplate.html" />
+      <EmbeddedResource Include="Resources\RowDetails.html" />
+    </ItemGroup>
+
+</Project>

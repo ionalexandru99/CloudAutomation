@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets",
+      "connectionId": "DatabaseConnectionVault"
+    },
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "DataBase:ConnectionString"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+# CloudAutomation
+
+This a solution designed to create cloud resources in Azure Cloud through the use of a ticketing system. The program is divided into multiple microservices that await a ticket from the user in which the type of resource that needs to be created is specified. After the ticket is created and send to the main service the program redirects the data to the responsible microservice which shares his status with the ticketing platform on which the ticket was created (currently only tested on Azure DevOps)
